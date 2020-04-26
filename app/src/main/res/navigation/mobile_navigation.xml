@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_map">
+
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.example.myapplication.ui.Map.MapFragment"
+        android:label="@string/map"
+        tools:layout="@layout/map">
+
+    </fragment>
+
+
+
+
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.example.myapplication.ui.history.HistoryFragment"
+        android:label="@string/history"
+        tools:layout="@layout/history" />
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.example.myapplication.ui.setting.SettingFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/setting">
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_information"
+        android:name="com.example.myapplication.ui.information.InformationFragment"
+        android:label="@string/information"
+        tools:layout="@layout/information">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_subscription"
+        android:name="com.example.myapplication.ui.subscription.SubscriptionFragment"
+        android:label="@string/subscription"
+        tools:layout="@layout/information">
+
+    </fragment>
+
+
+</navigation>
